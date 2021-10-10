@@ -1,0 +1,109 @@
+.grid-container{
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 7fr 7fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "tablero tablero tablero menu"
+    "tablero tablero tablero menu"
+    "footer footer footer footer";
+}
+
+.espacio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tablero;
+    background-color: #fff;
+}
+
+.menu{
+    padding: 20px;
+    grid-area: menu;
+    background-color: #222;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+    background-color:#222;
+}
+
+.menu-item{
+    margin: 10px;
+}
+
+canvas{
+    
+    border: solid black 1px;
+}
+
+#canvas-layer1{
+    position: absolute;
+    z-index: 3;
+}
+
+#canvas-layer2{
+    background-color: #222;
+    position: absolute;
+    z-index: 2;
+}
+
+button{
+    cursor: pointer;
+    background-color: #222;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    transition: 0.5s;
+    border: none;
+    color: aqua;
+    letter-spacing: 6px;
+    text-shadow: 0 0 30px aqua,
+    0 0 60px aqua,
+    0 0 120px aqua;
+    margin: 1em;
+}
+button:hover{
+    color: rgba(233, 233, 233, 0.1);
+}
+
+.ganador{
+    z-index: 4;
+    width: 650px;
+    background-color: rgba(1, 1, 1, 0.70);
+    font-weight: bolder;
+    padding: 2em 0 2em 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.turno{
+    background-color: rgba(0, 233, 233, 0.1);
+    padding: 2em 0em 2em 0em;
+    margin: 2em;
+    text-shadow: 0 0 30px aqua,
+    0 0 60px aqua,
+    0 0 120px aqua;
+}
+
+.titulo{
+    background-color: rgba(0, 233, 233, 0.1);
+    padding: 1em 4em;
+    margin: 4em 0 2em 0;
+}
+
+.space{
+    margin: 1.3em;
+}

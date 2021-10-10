@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 En Linea</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS Files -->
+    <script src="js/Timer.js"></script>
+    <script src="js/Ficha.js"></script>
+    <script src="js/Jugador.js"></script>
+    <script src="js/Tablero.js"></script>
+    <script src="js/Juego.js"></script>
+    <script src="js/Main.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="espacio">
+            <canvas id="canvas-layer1" width=800 height=550>
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+            <canvas id="canvas-layer2" width=800 height=550>
+            </canvas>
+            <div class="ganador hidden" id="js-div-ganador">
+            </div>
+        </div>
+        <div class="menu">
+            <section id="js-state-game" class="hidden">
+                <div class="menu-item">
+                    <h4>Tiempo partida</h4>
+                    <h2 id="js-timer">00:00:00</h2>
+                </div>
+                <section id="js-turno-div" class="menu-item">
+                    <h3 id="js-turno"></h3>
+                    <h2 id="js-turno-jugador"></h2>
+                </section>
+            </section>
+            <section>
+                <div class="menu-item">
+                    <h6 class="titulo">-.-.-.-.-.-.- Nueva partida -.-.-.-.-.-.-</h6>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item">
+                        <label class="menu-item">Modalidad de Juego:</label>
+                    </div>
+                    <select class="menu-item" name="modalidad" id="js-select-gameMod">
+                        <option value="3">3 en linea</option>
+                        <option selected value="4">4 en linea</option>
+                        <option value="5">5 en linea</option>
+                        <option value="6">6 en linea</option>
+                    </select>
+                </div>
+                <div class="menu-item space">
+                    <label for="color">Jugador 1:</label>
+                    <input class="input" type="color" value="#DEFFFF" id="js-input-color1">
+                </div>
+                <div class="menu-item">
+                    <label for="color">Jugador 2:</label>
+                    <input class="input" type="color" value="#234848" id="js-input-color2">
+                </div>
+                <div class="menu-item">
+                    <button id="js-btn-jugar">Jugar</button>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <p>Developed by Magalí Menchón & Luciano Scaminaci</p>
+        </div>
+    </div>
+</body>
+
+</html>
