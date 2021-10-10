@@ -8,7 +8,7 @@ _de la carrera de TUDAI - fac. Ciencias Exactas - UNICEN._
 _[github.io/JSDoc-Interfaces-Entregable2](https://magalimenchon.github.io/JSDoc-Interfaces-Entregable2/)_
 
 ## 📦 Acceso al proyecto
-_[Juego - 4 en línea](https://magalimenchon.github.io/interfaces/EntregablePractico2/)_
+_[Juego - 4 en línea](https://magalimenchon.github.io/JSDoc-Interfaces-Entregable2/EntregablePractico2/)_
 
 ## Autores ✒️
 
